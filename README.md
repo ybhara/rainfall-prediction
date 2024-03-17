@@ -1,4 +1,5 @@
-![Screenshot (76)](https://github.com/ybhara/rainfall-prediction/assets/161044637/b50c1a8d-bf90-4627-ac77-9411b7f1fcd3) Rainfall-prediction
+RAINFALL PREDICTION
+
 
  Demo video: https://drive.google.com/file/d/1qLNu6yrVAw6Vh2Holbg2SrOv0fyBXADK/view?usp=drivesdk
 
