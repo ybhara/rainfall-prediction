@@ -1,0 +1,91 @@
+import numpy as np
+import matplotlib.pyplot as plt
+import pandas as pd
+import seaborn as sns ; sns.set()
+import warnings
+warnings.filterwarnings('ignore')
+
+data = pd.read_csv("weatherAUS.csv")
+data.head()
+
+data.cloums
+
+data.shape
+
+data.isnull().sum()
+
+data=data.dropna()
+data
+data.isnull().sum()
+
+data.describe()
+data.columns
+data.RainToday.value_counts()
+g=sns.countplot(x='RainToday',data=data)
+g=sns.distplot(data['Rainfall'])
+
+data['RainToday']=data['RainToday'].apply(lambda x:1 if x=='Yes' else 0)
+train=data[['MinTemp','MaxTemp','Rainfall','Evaporation','Sunshine','WindGustSpeed','WindSpeed9am','WindSpeed3pm','Humidity9am','Humidity3pm','Pressure9am','Pressure3pm','Cloud9am','Cloud3pm','Temp9am','Temp3pm']]
+data['RainTomorrow'] = data['RainTomorrow'].apply(lambda x:1 if x=='Yes' else 0)
+label=data['RainTomorrow']
+from sklearn.model_selection import train_test_split
+x_train ,y_train ,x_test ,y_test = train_test_split(train,label,test_size=0.6 )
+
+LOGISTIC REGRESSION
+
+from sklearn. linear_model import LogisticRegression from sklearn.metrics import accuracy_score
+
+ mod1 Logistickegression()
+
+ mod1.fit(x_train,x_test)
+
+
+ 1f-mod1.predict(y_train)
+
+ acc-accuracy_score(y_test,lf) acc
+
+from sklearn.metrics import confusion matrix
+
+ cn-confusion_matrix(y_test, 1f)
+
+ labels [0,1]
+
+sns.heatmap(cn, annot True, cmap="Y1GnBu", fmt=",3f", xticklabels labels, yticklabels plt.show()
+
+RANDOM FOREST 
+
+from sklearn.ensemble import Random ForestClassifier
+
+mod2 Random ForestClassifier()
+
+ mod2.fit(x_train,x_test)
+
+ RFwmod2.predict(y_train)
+
+ acc1 accuracy score(y_test, RF) acci
+
+
+
+from sklearn.metrics import confusion_matrix
+
+cn1 confusion_matrix(y_test, mod2.predict(y_train))
+
+ labels = [0,1] sns.heatmap(cn1, annot True, cmap="YlGnllu", fat".3f", xticklabels labels,yticklabel plt.show()
+
+ import matplotlib.pyplot as plt; plt.rcdefaults()
+
+import numpy as np
+
+import matplotlib.pyplot as plt
+
+objects (Logistic Regression', 'Random Forest')
+
+y_pos=np.arange(len(objects)) performance [acc, acc1]
+
+plt.bar(y_pos, performance, align='center', alpha=0.5) plt.xticks(y_pos,objects)
+
+plt.ylabel("Accuracy Score')
+
+plt.title("Logistic Regression v/s Random Forest')
+
+plt.show()
