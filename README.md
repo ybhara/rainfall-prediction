@@ -1,4 +1,4 @@
- Rainfall-prediction
+![Screenshot (76)](https://github.com/ybhara/rainfall-prediction/assets/161044637/b50c1a8d-bf90-4627-ac77-9411b7f1fcd3) Rainfall-prediction
 
  Demo video: https://drive.google.com/file/d/1qLNu6yrVAw6Vh2Holbg2SrOv0fyBXADK/view?usp=drivesdk
 
@@ -8,11 +8,11 @@
  |   Name               |        E-mail           |
  | ---------------------|------------------------ |
  |Y.BHARATH             |  ybharath2093@gmail.com |
- | -----------------------------------------------|
+ ||
  |Y.BHARATH SIMHA REDDY | 99210041662@klu.ac.in   |
- |----------------------------------------------- |
+ ||
  | V.MAHESH REDDY       |  9921004746@klu.ac.in   |
- |----------------------------------------------- |
+ | |
  | G.SHYAM              | 9921009023@Klu.ac.in    |
  --------------------------------------------------
 
@@ -132,6 +132,13 @@ plt.ylabel("Accuracy Score')
 plt.title("Logistic Regression v/s Random Forest')
 
 plt.show()
+
+
+output:
+![Screenshot](https://github.com/ybhara/rainfall-prediction/assets/161044637/737f2db8-903a-4425-b807-4a6c66523971)
+![Screenshot ](https://github.com/ybhara/rainfall-prediction/assets/161044637/ddf254de-ad35-4dda-b5a0-6c601fec2c21)
+![Screenshot ()](https://github.com/ybhara/rainfall-prediction/assets/161044637/76031f43-480f-4d29-b849-4109a0fa14f8)
+![Screenshot](https://github.com/ybhara/rainfall-prediction/assets/161044637/4c868506-7de6-45c5-b6ec-699004f9fc8c)
 
 what's next?
 we are plan future devolpment of websit to our project people  can see  rainfall.
